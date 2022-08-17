@@ -1,0 +1,122 @@
+/* START TOAST MESSAGE */
+/* ======= Toast message ======== */
+.toast-message-box{
+    height: 30px;
+}
+
+.toast-message__success{
+    max-width: 360px;
+    min-height: 50px;
+    background-color: #69b631;
+    position: relative;
+    display: flex;
+    border-radius: 4px;
+    margin-left: 65%;
+    animation: slideInLeft ease .5s, fadeOut linear 1s 1.5s forwards;
+}  
+
+.toast-message__error{
+    max-width: 360px;
+    min-height: 50px;
+    background-color: rgb(255, 64, 0);
+    position: relative;
+    display: flex;
+    border-radius: 4px;
+    margin-left: 65%;
+    animation: slideInLeft ease .5s, fadeOut linear 1s 1.5s forwards;
+}  
+
+.toast-message__error-admin{
+    max-width: 360px;
+    min-height: 50px;
+    background-color: rgb(255, 64, 0);
+    position: relative;
+    display: flex;
+    border-radius: 4px;
+    margin-left: 70%;
+    animation: slideInLeft ease .5s, fadeOut linear 1s 1.5s forwards;
+}
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(calc(32px));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+
+/* toast message admin */
+
+@keyframes slideInLeft_admin {
+    from {
+      opacity: 0;
+      transform: translateX(calc(48px));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+
+.toast-message__icon{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    height: 100%;
+
+}
+
+.toast-message__body{
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    bottom: 0;
+    font-size: 10px;
+
+}
+
+.toast-message__title{
+    font-size: 16px;
+    color: aliceblue;
+
+}
+
+.toast-message__msg{
+
+    font-size: 14px;
+    color: aliceblue;
+
+}
+
+.toast-message__close{
+    position: absolute;
+    right: 8px;
+    top: 0;
+}
+.toast-message__close i {
+    font-size: 12px;
+    color: white;
+}
+
+
+  
+
+
+/* END TOAST MESSAGE */

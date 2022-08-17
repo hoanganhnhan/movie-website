@@ -1,0 +1,42 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="header-movie-nominate-detail" >
+      <i class="fa-solid fa-star header-movie-nominate-icon" ></i>
+      <span class="header-movie-nominate-p">PHIM ĐỀ CỬ</span>
+    </div>
+    <div class="carousel-item active">
+      <div class="container-home-list">
+        <div class="container">
+          <div class="row">
+            <% for (let i=0; i < 5; i++) { %>
+              <%- include('./NominateItem/nominateitem.ejs',{name: listPhimChieuRap[i].name, imageUrl:
+                listPhimChieuRap[i].imageUrl}) %>
+                <% } %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-home-list">
+        <div class="container">
+          <div class="row">
+            <% for (let i=5; i < 10; i++) { %>
+              <%- include('./NominateItem/nominateitem.ejs',{name: listPhimChieuRap[i].name, imageUrl:
+                listPhimChieuRap[i].imageUrl}) %>
+                <% } %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

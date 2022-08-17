@@ -1,0 +1,184 @@
+<% if (!modeCategory) { %>
+<div class="container-home-list">
+  <div id="IDPHIMBO" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h1>PHIM BỘ MỚI CẬP NHẬT</h1>
+      <div class="carousel-item active">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+              <% for (let i=0; i < 8; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: listPhimBo[i].name,imageUrl: listPhimBo[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+              <% for (let i=8; i < 16; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: listPhimBo[i].name,imageUrl: listPhimBo[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#IDPHIMBO" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#IDPHIMBO" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+<div class="container-home-list">
+  <div id="IDPHIMLE" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h1>PHIM LẺ MỚI CẬP NHẬT</h1>
+      <div class="carousel-item active">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+
+              <% for (let i=0; i < 8; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: listPhimLe[i].name,imageUrl: listPhimLe[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+              <% for (let i=8; i < 16; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: listPhimLe[i].name,imageUrl: listPhimLe[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#IDPHIMLE" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#IDPHIMLE" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+<div class="container-home-list">
+  <div id="IDPHIMCHIEURAP" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h1>PHIM CHIẾU RẠP MỚI CẬP NHẬT</h1>
+      <div class="carousel-item active">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+
+              <% for (let i=0; i < 8; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: listChieuRap[i].name, imageUrl:listChieuRap[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+              <% for (let i=8; i < 16; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: listChieuRap[i].name, imageUrl:listChieuRap[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#IDPHIMCHIEURAP" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#IDPHIMCHIEURAP" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+<div class="container-home-list">
+  <div id="IDHOATHINH" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h1>HOẠT HÌNH</h1>
+      <div class="carousel-item active">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+
+              <% for (let i=0; i < 8; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: HoatHinh[i].name, imageUrl:
+                  HoatHinh[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-home-list">
+          <div class="container">
+            <div class="row">
+              <% for (let i=8; i < 16; i++) { %>
+                <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: HoatHinh[i].name, imageUrl:
+                  HoatHinh[i].imageUrl}) %>
+                  <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#IDHOATHINH" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#IDHOATHINH" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+<% } else { %>
+  <div class="container-home-list">
+    <div class="container-home-title">
+      <span class="container-home-nametitle"><%= nameCategory %></span>
+    </div>
+    <div class="container">
+      <div class="row">
+        <% for (let i=0; i < listCategory.length; i++) { %>
+          <%- include('./ListBodyHomePage/itemlistbodyhomepage.ejs',{name: listCategory[i].name, imageUrl:
+            listCategory[i].imageUrl}) %>
+            <% } %>
+      </div>
+    </div>
+  </div>
+<% } %>
+

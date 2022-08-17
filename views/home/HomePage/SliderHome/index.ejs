@@ -1,0 +1,42 @@
+<div class="container-header-slider-list">
+  <div class="container-header-slider-item">
+
+    <div class="container-home-list">
+      <div id="IDSLIDER" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <div class="container-home-list">
+              <div class="container">
+                <div class="row">
+                  <% for (let i=0; i < 6; i++) { %>
+                      <%- include('./ItemSlider/itemslider.ejs' ,{ listPhimLe: listPhimLe, i: i}) %>
+                        <% } %>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="carousel-item">
+
+            <div class="container-home-list">
+              <div class="container">
+                <div class="row">
+                  <% for (let i=6; i < 12; i++) { %>
+                    <%- include('./ItemSlider/itemslider.ejs' ,{listPhimBo: listPhimBo, i: i}) %>
+                      <% } %>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,62 @@
+      
+      <div class="body-admin-header">
+        <p class="body-admin-header-title"><%= pageTitle %></p>
+      </div>
+        <div class="row">
+          <div class="container-body-edit-episode">
+            
+            <div class="container-body-edit-episode-item">
+              <img class="container-body-edit-episode-item-img" src="/<%= movie.imageUrl %>" alt="">
+            </div>
+
+            <div class="container-body-edit-episode-item-link">
+              <% for (let e of listEpisode) { %>
+              <div class="episode-item">
+                <a href="/admin/<%= movie._id %>/edit-episode?edit=<%= e._id %>" class="text-decoration-none episode-item-link">
+                  <span ><%= e.episode %> </span>
+                </a>
+                <a href="" id="delete-episode" class="episode-item-icon" data-toggle="modal" data-target="#delete-Episode" data-id="<%= movie._id %>" data-csrf="<%= csrfToken %>" data-episode="<%= e.episode %>">
+                  <i class="fa-solid fa-circle-minus"></i>
+                </a>
+              </div>
+              <% } %>
+
+              <a href="/admin/<%= movie._id %>/add-episode" class="episode-item-add">
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+       <!-- UI verify Delete -->
+       <div id="delete-Episode" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">WARRING !!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you want to delete?</p>
+            </div>
+            <div class="modal-footer">
+              <button id="deletemovieId" type="button" class="btn btn-danger">Delete</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form hidden delete Movie in Cart-->
+<form name="delete-form-episode" method="POST">
+  <input id="hidden-movieId" type="hidden"  name="movieId">
+  <input id="hidden-csrf" type="hidden" name="_csrf" value="<%= csrfToken %>">
+</form>
+
+      <script src="../../../js/deleteEpisodeAdmin.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

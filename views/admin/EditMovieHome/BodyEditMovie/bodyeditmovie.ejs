@@ -1,0 +1,163 @@
+<div class="body-container-admin">
+
+    
+
+        <div class="body-admin-header">
+            <p class="body-admin-header-title"><%= pageTitle %></p>
+        </div>
+    <div class="container-body-editmovie">
+        <div class="toast-message-box">
+            <% if(errorMeassage) { %>
+            <div id="toast-message" class="toast-message">
+                <div class="toast-message toast-message__error-admin">
+                  <div class="toast-message__icon">
+                    <i class="fas fa-exclamation-circle" style="font-size: 20px; color:#333 ;"></i>
+                </div>
+                <div class="toast-message__body">
+  
+                    <h3 class="toast-message__title">Error !!! </h3>
+
+                    <p class="toast-message__msg"><%= errorMeassage %></p>
+                </div>
+                <div class="toast-message__close">
+                    <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
+            <% } %>
+
+          </div>
+    
+            <form action="/admin/<% if (editing) { %>edit-movie?_method=PUT<% } else {%>add-movie<% } %>" method="POST" enctype="multipart/form-data">
+                <div class="form-group-container">
+                    <div class="form-group-container-item">
+                        <div class="form-group">
+                            <label for="name">Name Film</label>
+                            <input 
+                                class="form-control form-edit-movie-item-name"
+                                type="text" 
+                                name="name" 
+                                id="name" 
+                                value="<%= oldInput.name %>">
+                        </div>
+                        <div class="form-group">
+                            <label for="director">Director</label>
+                            <input 
+                            class="form-control form-edit-movie-item-director"
+                            type="text" 
+                            name="director" 
+                            id="director" 
+                            value="<%=  oldInput.director %>">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea 
+                        class="form-control form-edit-movie-item-description"
+                        type="text" 
+                        name="description" 
+                        id="description" 
+                        rows="5"
+                        ><%= oldInput.description %></textarea>
+                    </div>
+                </div>
+                <div class="form-group-container">
+                    <div class="form-group-container-item">
+                        <div class="form-group">
+                            <label for="producer">Producer</label>
+                            <input 
+                            class="form-control form-edit-movie-item-producer"
+                            type="text" 
+                            name="producer" 
+                            id="producer" 
+                            value="<%=  oldInput.producer %>">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="national">National</label>
+                            <input 
+                            class="form-control form-edit-movie-item-national"
+                            type="text" 
+                            name="national" 
+                            id="national" 
+                            value="<%= oldInput.national  %>">
+                        </div>
+                    </div>
+                    <div class="form-group-container-item">
+                        <div class="form-group">
+                            <label for="image">Image</label>
+                            <input type="file" class="form-control form-edit-movie-item-image" name="image" id="image" >
+                        </div>
+                        <div class="form-group">
+                            <label for="character">Character</label>
+                            <input 
+                            class="form-control form-edit-movie-item-character"
+                            type="text" 
+                            name="character" 
+                            id="character" 
+                            value="<%= oldInput.character %>">
+                        </div>
+
+                    </div>   
+                </div>
+                <div class="form-group-container">
+
+                    <div class="form-group-container-item-typeFilm">
+                        <div class="form-control">
+                            <label for="typeFilm" style="font-size: 16px ; font-weight: 600;">Typefilm:   </label>
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Phim-Bộ" style="font-size:10px ;"> Pim Bộ
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Phim-Lẻ" style="font-size:10px ;"> Pim Lẻ
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Phim-Chiếu-Rạp" style="font-size:10px ;"> Phim Chiếu Rạp
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Hoạt-Hình" style="font-size:10px ;"> Hoạt Hình
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Phim-Sắp-Chiếu" style="font-size:10px ;"> Phim Sắp Chiếu
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Cổ-Trang-Thần-Thoại" style="font-size:10px ;"> Cổ Trang-Thần Thoại
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Khoa-Học-Viễn-Tưởng" style="font-size:10px ;"> Khoa Học-Viễn Tưởng
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Phiêu-Lưu-Hành-Động" style="font-size:10px ;"> Phiêu Lưu-Hành Động
+                            <input type="radio" 
+                            name="typeFilm" 
+                            id="typeFilm"
+                            value="Việt-Nam" style="font-size:10px ;"> Việt Nam
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-form-group-submit">
+
+                    <button type="submit" class="btn btn-primary btn-edit-movie">Submit</button>
+                </div>
+            
+                <% if (editing) { %>
+                    <input type="hidden" value="<%= movieId %>" name="movieId">
+                <% } %>
+
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    
+            </form>
+        </div>
+
+</div>
+

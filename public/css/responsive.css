@@ -1,0 +1,377 @@
+/* PC: width >= 1024px */
+@media only screen and (min-width: 1025px) {
+
+    .nav__bar-btns,
+    .nav__overlay {
+        display: none;
+    }
+
+    .container .container-detail-body .row {
+        max-height: 415px;
+        overflow: hidden;
+    }
+
+    .container-detail-body-img {
+        height: 415px;
+    }
+
+    .container-detail-body-img-content {
+        height: 100% !important;
+    }
+
+    .container-detail-body-img-detail {
+        width: 100% !important;
+    }
+
+    .container-detail-header {
+        margin-right: 0;
+    }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+
+    .nav__bar-btns {
+        display: block;
+    }
+
+    .main-header__nav {
+        display: none;
+    }
+
+    .main-header__logo {
+        display: none;
+    }
+
+    /* HOME */
+    .carousel-inner{
+        height: 350px !important;
+    }
+    .container-header-slider-item{
+        margin-left: 0 !important;
+    }
+    .container-home-sidebar,
+    .carousel-control-prev,
+    .carousel-control-next,
+    .main-header-nav-list {
+        display: none !important;
+    }
+
+    .container-header-slider-list {
+        overflow: hidden;
+    }
+
+    .container-detail-body-img-detail {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container.container-body .container-home-list .container .row {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        background-color: #181818;
+        overflow: hidden;
+    }
+
+    #IDSLIDER .container .col-md-2 {
+        width: 50%;
+    }
+
+    #IDSLIDER .container .col-md-2 .container-movie-name,
+    #IDSLIDER .container .col-md-2 .container-movie-img {
+        width: 100% !important;
+    }
+
+    .col-md-2 .container-movie-item,
+    .row .col-md-3 .container-movie-img {
+        width: 100%;
+
+    }
+
+    .container.container-body .row .col-md-9 {
+        width: 100% !important;
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .container-home-list .col-md-3 {
+        width: 50%;
+    }
+
+    .container-home-sidebar {
+        display: none;
+    }
+
+    /* CART USER */
+    .container-cart-user-detail{
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    /* TOAST MESSAGE */
+    .toast-message__error{
+        max-width: 360px;
+        min-height: 50px;
+        background-color: rgb(255, 64, 0);
+        position: relative;
+        display: flex;
+        border-radius: 4px;
+        margin-left: 10% !important;
+        animation: slideInLeft ease .5s, fadeOut linear 1s 1.5s forwards;
+    } 
+
+
+    /* MOVIE DETAIL */
+    .content-myaccount-detail{
+        margin-top: 56px;
+        margin-bottom: 32px;
+    }
+
+    .content-myaccount-detail th{
+        font-size: 12px;
+    }
+    .content-myaccount-img{
+        display: none;
+    }
+    .carousel-inner{
+        height: 280px;
+    }
+    .container-detail-header {
+        margin-right: 0;
+    }
+
+    .col-md-9.container-body-movie-detail {
+        background-color: #302e2e;
+        margin: 16px 0 0;
+    }
+
+    .col-md-9.container-body-movie-detail .container-home-list {
+        max-height: 255px;
+        overflow: hidden;
+    }
+
+    .row .col-md-9.container-body-movie-detail {
+        padding: 0 !important;
+        background: #181818;
+    }
+
+    #carouselExampleControls .container .col-md-2 {
+        width: 50%;
+    }
+
+    /* WATCH FILM */
+
+
+    .padding-right-0 {
+        padding: 0 !important;
+
+    }
+
+    .container-body-episode {
+        padding: 0 !important;
+        padding-top: 20px !important;
+    }
+
+    .container-body-episode-list {
+        height: 90px !important;
+        overflow-y: scroll !important;
+    }
+
+    .container-body-video-title span {
+        padding-left: 8px;
+    }
+
+    .container-body-video-detail .row {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .container.container-body-video-detail .container-body-video {
+        height: 320px !important;
+    }
+
+    .container.container-body-video-detail .container-body-video iframe {
+        height: 320px !important;
+    }
+
+    .container.container-body-video-detail #carouselExampleControls .container-home-list {
+        max-height: 255px;
+        overflow: hidden;
+    }
+
+    .container.container-body-video-detail #carouselExampleControls .container .col-md-2 {
+        width: 45%;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+
+    .nav__bar-btns {
+        display: block;
+    }
+
+    .main-header__nav {
+        display: none;
+    }
+
+    /* HOME */
+    .container-header-slider-item{
+        margin-left: 0 !important;
+    }
+    .container.container-body .container-home-list .container .row {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        background-color: #181818;
+        overflow: hidden;
+    }
+
+    #IDSLIDER .container .col-md-2 {
+        width: 23%;
+    }
+
+    .col-md-2 .container-movie-item,
+    .row .col-md-3 .container-movie-img {
+        width: 100%;
+
+    }
+
+    .container.container-body .row .col-md-9 {
+        width: 100% !important;
+    }
+
+    .container-home-list .col-md-3 {
+        width: 30%;
+    }
+
+    .container-home-sidebar {
+        display: none;
+    }
+    /* TOAST MESSAGE */
+    .toast-message__error{
+        max-width: 360px;
+        min-height: 50px;
+        background-color: rgb(255, 64, 0);
+        position: relative;
+        display: flex;
+        border-radius: 4px;
+        margin-left: 50% !important;
+        animation: slideInLeft ease .5s, fadeOut linear 1s 1.5s forwards;
+    } 
+
+    /* MOVIE DETAIL */
+    body {
+        background-color: #181818 !important;
+    }
+
+    .container-cart-user-detail{
+        margin-bottom: 300px !important;
+    }
+
+    .container-cart-user-detail-tablet{
+        margin-bottom: 370px !important;
+    }
+
+    .container-detail-header {
+        min-width: 720px !important;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .container .container-detail-body {
+        padding: 0 12px;
+        margin-bottom: 24px;
+    }
+
+    .container .container-detail-body .row {
+        max-height: 408px;
+        overflow: hidden;
+    }
+
+    .col-md-9.container-body-movie-detail {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .container-detail-body-img-detail,
+    .container-detail-body-img-content {
+        width: 100%;
+    }
+
+    .col-md-6.container-detail-body-img {
+        width: 40%;
+        height: 408px;
+    }
+
+    .container-detail-body-detail {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .detail-body-title-name {
+        font-size: 18px;
+    }
+
+    .container-detail-chatonline {
+        margin-left: 15px;
+        margin-right: 12px;
+    }
+
+    .row .col-md-3 .container-home-sidebar {
+        display: none;
+    }
+
+    .container-body-movie-detail #carouselExampleControls .container-movie-img,
+    .container-body-movie-detail #carouselExampleControls .container-movie-item {
+        width: 140px;
+    }
+
+    /* WATCH MOVIE */
+    .container-body-video-ifarme {
+        width: 100%;
+        height: 700px !important;
+    }
+
+    .container-body-episode {
+        padding-top: 40px !important;
+    }
+
+    .container.container-body-video-detail {
+        max-width: 700px !important;
+    }
+
+    .container-detail-chatonline {
+        margin: 0;
+    }
+
+    .container-body-video-detail #carouselExampleControls .carousel-inner {
+        width: 700px;
+        margin: 8px 0 24px 0;
+        background-color: #302e2e;
+    }
+
+    #carouselExampleControls .container .col-md-2 {
+        width: 30%;
+    }
+
+    #carouselExampleControls .container {
+        height: 250px;
+    }
+
+    .container-body-movie-detail #carouselExampleControls .container .row {
+        background-color: #302e2e;
+    }
+
+    .container.container-body-video-detail .container-body-video {
+        height: 320px !important;
+    }
+
+    .container.container-body-video-detail .container-body-video iframe {
+        height: 320px !important;
+    }
+
+}

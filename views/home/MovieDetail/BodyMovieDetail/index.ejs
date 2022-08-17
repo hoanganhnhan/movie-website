@@ -1,0 +1,27 @@
+<div class="container padding-top">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-detail-header" style="width: 98.5%;">
+                <span>DARK PHIM /   <%= movie.national %> /   <%= movie.name %> </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row container-detail-movie">
+        <div class="col-md-9 container-body-movie-detail">
+            <%- include('./InforMovieDetail/informoviedetail.ejs',{ movie: movie,modeWatching: modeWatching }) %>
+
+                <%- include('./DescriptionMovieDetail/descriptionmoviedetail.ejs',{movie: movie}) %>
+
+                    <%- include('../../ChatOnline/chatonline.ejs') %>
+
+                        <%- include('./NominateMovie/index.ejs',{listPhimChieuRap: listPhimChieuRap}) %>
+
+        </div>
+        <div class="col-md-3">
+            <%- include('../../SideBar/index.ejs',{movies: listPhimSapChieu}) %>
+        </div>
+    </div>
+</div>

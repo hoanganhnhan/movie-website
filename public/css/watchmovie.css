@@ -1,0 +1,93 @@
+.container-body-video-detail {
+    display: block;
+    padding: 0;
+    /* padding-top: 100px; */
+    width: auto;
+
+}
+
+.padding-top-100{
+    padding-top: 80px;
+}
+
+.container-body-video-detail .row {
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.container-body-video {
+    width: 100%;
+    height: 500px;
+    background-color: #181818;
+    position: relative;
+    padding: 0;
+}
+
+.container-body-video-ifarme {
+    width: 100%;
+    height: 600px;
+}
+
+.container-body-episode {
+    padding-top: 130px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-body-episode-list {
+    height: 160px;
+    display: flex;
+    width: 100%;
+    background-color: #181818;
+    margin: 10px 0px;
+    display: block;
+}
+
+.container-body-episode-item {
+    float: left;
+    margin: 4px 8px;
+    background-color: #3a3a3a;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 8px;
+}
+
+.container-body-episode-item:hover {
+    background-color: #c58560;
+    cursor: pointer;
+
+}
+
+.container-body-episode-item a {
+    color: #fdfdfd !important;
+}
+
+.container-body-video-title {
+    padding: 20px 0;
+    color: #c58560;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container-body-video-detail .container-detail-chatonline {
+    padding: 0;
+}
+
+
+.container-body-video-detail .container-detail-chatonline #form-comment {
+    position: relative;
+}
+
+.container-body-video-detail .container-detail-chatonline #form-comment #comment {
+    padding: 0px;
+}
+
+.container-body-video-detail .carousel-inner .container {
+    padding: 0;
+}
+
+.container-body-video-detail .container-movie-item,
+.container-body-video-detail .container-movie-img {
+    width: 140px !important;
+}

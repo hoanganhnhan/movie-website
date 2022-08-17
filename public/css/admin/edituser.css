@@ -1,0 +1,56 @@
+.body-edit-user{
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    box-shadow: 1px 0px 3px 2px rgb(188, 188, 203);
+
+}
+
+.body-edit-user-form{
+    /* padding-top: 30px; */
+    width: 100%;
+    
+}
+
+.edit-user-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-user-item{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.edit-user-item-input{
+    height: 40px;
+}
+
+.edit-user-form label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+
+}
+
+.edit-user-form input{
+    font-size: 16px;
+    
+}
+
+.btn-edit-user-submit{
+    padding: 8px 48px;
+    font-size: 12px;
+    margin-bottom: 32px;
+}
+
+.user-edit-message-error{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+

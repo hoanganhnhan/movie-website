@@ -1,0 +1,834 @@
+#footer {
+    background-color: #353535 !important;
+    padding-top: 16px;
+}
+
+.fa-solid.fa-envelope {
+    color: #1a1818;
+    /* font-size: 24px; */
+    margin-right: 5px;
+}
+
+.fa-solid.fa-phone {
+    color: #1a1818;
+    margin-right: 5px;
+    /* font-size: 24px; */
+}
+
+.card {
+    background-color: #353535 !important;
+    border: none !important;
+}
+
+#newsletter-social {
+
+    width: 40%;
+    margin: 0 auto 16px auto;
+    text-align: center;
+
+
+}
+
+#social {
+    opacity: 0.5 !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    #footer {
+
+        width: 100%;
+        margin: 16px auto 0;
+
+    }
+
+
+    /* H3 Styling */
+
+    #footer h3.left {
+
+        color: #000;
+        font-size: 16px;
+        font-family: Mallory, Sans-Serif;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        text-align: left;
+
+    }
+
+    #footer h3.center {
+
+        color: #000;
+        font-size: 16px;
+        font-family: Mallory, Sans-Serif;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        text-align: center;
+
+    }
+
+
+    /* List Styling */
+
+    #footer ul {
+        margin: 0;
+        list-style-type: none;
+    }
+
+    #footer li {
+        margin: 0;
+        color: #666666;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        list-style-type: none;
+        text-align: left;
+    }
+
+
+    /* Utility Links Div Styling */
+
+    #utility-links {
+
+        width: 50%;
+        height: 115px;
+        background-color: #353535;
+        margin: 15px auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .rectangle {
+        width: 1px;
+        height: 100px;
+        background: #D8D8D8;
+        margin: 0 30px 0 0;
+        float: left;
+        display: inline-block;
+
+    }
+
+
+    /* Help Styling */
+
+    #footer .help {
+
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin: 0;
+        display: inline-block;
+
+    }
+
+
+    /* Help Img Icons*/
+
+    #footer .help-img-icon {
+
+        float: left;
+        margin: 0 5px 0 0;
+
+    }
+
+
+    /* About Styling */
+
+    #footer .about {
+
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin: 0;
+        display: inline-block;
+
+    }
+
+
+    /* Card Services Styling */
+
+    #footer .card {
+
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin: 0;
+        display: inline-block;
+
+    }
+
+
+    /* Newsletter-Social Container */
+
+    #newsletter-social {
+
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+
+    /* Newsletter Styling */
+
+    #newsletter {
+
+        width: 65%;
+        margin: 8px 0 0 0;
+        text-align: center;
+        display: inline-block;
+
+    }
+
+    #footer p.deals {
+
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+        line-height: 0;
+        text-align: center;
+
+    }
+
+    #footer input[type=text] {
+
+        width: 60%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px #D9D6D6;
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer input[type=button],
+    #footer input[type=submit],
+    #footer input[type=reset] {
+
+        background-color: #0677FF;
+        border: 2px;
+        border-radius: 4px;
+        color: white;
+        padding: 15px 35px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 900;
+
+    }
+
+
+    /* Social Media Styling */
+    #social {
+
+        padding-top: 8px;
+
+    }
+
+
+
+    /* Copyright Styling */
+
+    #footer .rectangle-horiz {
+        width: 100%;
+        height: 2px;
+        background: #D8D8D8;
+        margin: 24px 0 0 0;
+
+    }
+
+
+    #copyright {
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    #footer .copy {
+
+        color: #a7a7a7;
+        font-size: 10px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        margin-left: 20px;
+        display: inline-block;
+        overflow: hidden;
+
+    }
+
+
+    /* Link Styling */
+
+    #footer a:link {
+        color: #000;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+    #footer a:visited {
+        color: #000;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer a:hover {
+        color: #0677FF;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer a:active {
+        color: #0677FF;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+}
+
+
+
+/* =TABLET */
+
+@media all and (max-width: 1024px) and (min-width: 740px) {
+
+    /* Footer Parent Div Styling */
+
+    #footer {
+
+        width: 100%;
+        margin: 16px auto 0;
+
+
+    }
+
+    /* H3 Styling */
+
+    #footer h3.left {
+
+        color: #000;
+        font-size: 16px;
+        font-family: Mallory, Sans-Serif;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        text-align: left;
+
+    }
+
+    #footer h3.center {
+
+        color: #000;
+        font-size: 16px;
+        font-family: Mallory, Sans-Serif;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        text-align: center;
+
+    }
+
+
+    /* List Styling */
+
+    #footer ul {
+        margin: 0;
+        list-style-type: none;
+    }
+
+    #footer li {
+        margin: 0;
+        color: #666666;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        list-style-type: none;
+        text-align: left;
+    }
+
+
+
+    /* Utility Links Div Styling */
+
+    #utility-links {
+
+        width: 90%;
+        height: 115px;
+        /* width: 50%;
+        height: 115px; */
+        background-color: #353535;
+        margin: 15px auto 0 auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #footer .rectangle {
+        width: 1px;
+        height: 100px;
+        background: #D8D8D8;
+        margin: 0 30px 0 30px;
+        float: left;
+        display: inline-block;
+
+    }
+
+    /* Help Styling */
+
+    #footer .help {
+
+        width: 25%;
+        height: 100px;
+        float: left;
+        margin: 0;
+        display: inline-block;
+
+    }
+
+    /* Help Img Icons*/
+
+    #footer .help-img-icon {
+
+        float: left;
+        margin: 0 5px 0 0;
+
+    }
+
+
+    /* About Styling */
+
+    #footer .about {
+
+        width: 25%;
+        height: 100px;
+        float: left;
+        margin: 0;
+        display: inline-block;
+
+    }
+
+
+    /* Card Services Styling */
+
+    #footer .card {
+
+        width: 25%;
+        height: 100px;
+        float: left;
+        margin: 0;
+        display: inline-block;
+
+    }
+
+
+    /* Newsletter Styling */
+
+    #newsletter {
+
+        margin: 8px 0 0 0;
+        text-align: center;
+        /* float: left; */
+        display: inline-block;
+
+        /* width: 65%;
+        margin: 30px 0 0 0;
+        text-align: center;
+        display: inline-block; */
+
+
+    }
+
+    #footer p.deals {
+
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+        line-height: 0;
+        text-align: center;
+
+    }
+
+    #footer input[type=text] {
+
+        width: 40%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px #D9D6D6;
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer input[type=button],
+    #footer input[type=submit],
+    #footer input[type=reset] {
+
+        background-color: #0677FF;
+        border: 2px;
+        border-radius: 4px;
+        color: white;
+        padding: 15px 35px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 900;
+
+    }
+
+
+    /* Social Media Styling */
+
+    #social {
+
+
+        margin: 20px 0 0 0;
+
+        display: inline-block;
+
+    }
+
+
+    /* Copyright Styling */
+
+    #footer .rectangle-horiz {
+        width: 100%;
+        height: 2px;
+        background: #D8D8D8;
+        margin: 0 0 0 0;
+
+    }
+
+
+    #copyright {
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+
+    }
+
+
+    #footer .copy {
+
+        color: #a7a7a7;
+        font-size: 10px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        margin-left: 20px;
+
+
+    }
+
+
+    /* Link Styling */
+
+    #footer a:link {
+        color: #000;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+    #footer a:visited {
+        color: #000;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer a:hover {
+        color: #0677FF;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer a:active {
+        color: #0677FF;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+}
+
+
+
+
+/* MOBILE */
+
+@media all and (max-width: 414px) {
+
+
+    /* Footer Parent Div Styling */
+
+    #footer {
+
+        width: 100%;
+        height: 475px;
+        margin: 0 auto;
+
+    }
+
+    /* H3 Styling */
+
+    #footer h3.left {
+        text-align: center;
+        color: #000;
+        font-size: 16px;
+        font-family: Mallory, Sans-Serif;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+
+
+    }
+
+    #footer h3.center {
+        /* text-align: center !important; */
+        color: #000;
+        font-size: 16px;
+        font-family: Mallory, Sans-Serif;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        text-align: center;
+
+    }
+
+
+    /* List Styling */
+
+    #footer ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    #footer li {
+        margin: 0;
+        color: #666666;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        list-style-type: none;
+        text-align: center;
+    }
+
+
+    /* Utility Links Div Styling */
+
+    #utility-links {
+
+        width: 100%;
+        background-color: #353535;
+
+
+
+    }
+
+    #newsletter-social {
+        width: 100%;
+
+    }
+
+
+    /* Help Styling */
+
+    #footer .help {
+
+        width: 100%;
+        height: 100px;
+        float: left;
+        margin: 0;
+
+    }
+
+
+    /* Help Img Icons*/
+
+    #footer .help-img-icon {
+
+        margin: 0 5px 0 0;
+
+    }
+
+
+    /* About Styling */
+
+    #footer .about {
+
+        width: 100%;
+        height: 80px;
+        float: left;
+
+    }
+
+
+    /* Card Services Styling */
+
+    #footer .card {
+
+        width: 100%;
+        height: 100px;
+        float: left;
+        margin: 0;
+
+    }
+
+
+    /* Newsletter Styling */
+
+    #newsletter {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    #footer p.deals {
+
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+        line-height: 0;
+        text-align: center;
+
+    }
+
+    #footer input[type=text] {
+
+        width: 40%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px #D9D6D6;
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer input[type=button],
+    #footer input[type=submit],
+    #footer input[type=reset] {
+
+        background-color: #0677FF;
+        border: 2px;
+        border-radius: 4px;
+        color: white;
+        padding: 15px 35px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 13px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 900;
+
+    }
+
+
+    /* Social Media Styling */
+
+    #social {
+
+        width: 100%;
+        margin: 30px 0 0 0;
+
+    }
+
+
+    /* Copyright Styling */
+
+    #footer .rectangle-horiz {
+
+        width: 100%;
+        height: 2px;
+        background: #D8D8D8;
+        margin: 30px 0 0 0;
+
+    }
+
+
+    #copyright {
+
+        width: 100%;
+        margin: 0 auto;
+
+
+    }
+
+
+    #footer .copy {
+
+        color: #a7a7a7;
+        font-size: 8.5px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        margin: 0;
+        white-space: nowrap;
+
+
+    }
+
+
+    /* Link Styling */
+
+    #footer a:link {
+        color: #000;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+    #footer a:visited {
+        color: #000;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer a:hover {
+        color: #0677FF;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+
+    #footer a:active {
+        color: #0677FF;
+        text-decoration: none;
+        font-family: Helvetica, Arial, Sans-Serif;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,92 @@
+<%- include('../../../includes/header.ejs') %>
+<link rel="stylesheet" href="/css/admin/sidebar.css">
+<link rel="stylesheet" href="/css/admin/bodyadmin.css">
+<link rel="stylesheet" href="/css/admin/editmovie.css">
+<link rel="stylesheet" href="/css/toastmessage.css">
+<link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.css">
+
+</header>
+
+<body>
+
+    <%- include('../../../includes/navigation.ejs') %>
+
+<div class="container pt-60px">
+  <a href="/admin/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <p class="sidebar-title">DARK ADMIN</p>
+</a>
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 container-sidebar-admin-home">
+      <%- include('../../SideBarAdmin/index.ejs') %>
+    </div>
+    <div class="col py-3">
+      
+        <div class="body-admin-header">
+            <p class="body-admin-header-title"><%= pageTitle %></p>
+          </div>
+            <div class="row">
+              <div class="container-body-edit-episode">
+                
+                <div class="container-body-edit-episode-item">
+                  <img class="container-body-edit-episode-item-img" src="/<%= movie.imageUrl %>" alt="">
+                </div>
+    
+                <div class="container-body-edit-comment-item-link">
+                  <% for (let e of listComment) { %>
+                  <div class="comment-item">
+                    <a href="#" class="text-decoration-none episode-item-link">
+                      <span >User <%= e.name %>: </span>
+                      <span ><%= e.content %> </span>
+
+                    </a>
+                    <a href="" id="delete-episode" class="episode-item-icon" data-toggle="modal" data-target="#delete-comment" data-id="<%= movie._id %>" data-csrf="<%= csrfToken %>" data-location="<%= e.location %>">
+                      <i class="fa-solid fa-circle-minus"></i>
+                    </a>
+                  </div>
+                  <% } %>
+    
+                </div>
+              </div>
+            </div>
+    
+           <!-- UI verify Delete -->
+           <div id="delete-comment" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">WARRING !!!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you sure you want to delete?</p>
+                </div>
+                <div class="modal-footer">
+                  <button id="deletemovieId" type="button" class="btn btn-danger">Delete</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+         
+    
+    </div>
+</div>
+</div>
+
+ <!-- Form hidden delete Movie in Cart-->
+ <form name="delete-form-comment" method="POST">
+    <input id="hidden-movieId" type="hidden"  name="movieId">
+    <input id="hidden-csrf" type="hidden" name="_csrf" value="<%= csrfToken %>">
+  </form>
+  
+        <script src="../../../js/deleteCommentAdmin.js"></script>
+  
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<%- include('../../../includes/footer.ejs') %>
+

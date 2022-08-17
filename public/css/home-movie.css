@@ -1,0 +1,208 @@
+/*START HOME PAGE */
+
+.container-header-slider-list {
+    width: 100%;
+    height: 300px;
+    background-color: #181818;
+}
+
+.container-header-slider-item {
+    margin-left: 24px;
+}
+
+.container-header-slider-list .container-header-slider-item .container {
+    padding: 0;
+}
+
+.container-body {
+    /* margin-top: 80px; */
+}
+
+.container-movie-item {
+    width: 180px;
+}
+
+.container-movie-item:hover {
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+.container-movie-img {
+    width: 180px;
+    height: 230px;
+}
+
+.container-movie-name {
+    font-weight: 500;
+
+}
+
+.container-home-list {
+    width: 100%;
+    height: auto;
+    background-color: rgb(177, 165, 165);
+}
+
+/*04/05*/
+
+.col-md-2 {
+    background-color: #181818;
+}
+
+.container--color {
+    /* background-color: #353535; */
+}
+
+/* carousel-control <, >*/
+.carousel-control-next .carousel-control-next-icon,
+.carousel-control-prev .carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 30px;
+    height: 42px;
+}
+
+.carousel-control-prev {
+    justify-content: flex-start !important;
+    width: 30px !important;
+}
+
+.carousel-control-next {
+    justify-content: flex-end !important;
+    width: 30px !important;
+}
+
+/*Phim bo moi cap nhat*/
+.row .col-md-9 {
+    padding-left: -calc(var(--bs-gutter-x) * .5);
+    background: #181818;
+}
+
+.row .col-md-3 {
+    padding-right: -calc(var(--bs-gutter-x) * .5);
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.col-md-9 .container-home-list {
+    padding-right: calc(var(--bs-gutter-x) * .2 -3px);
+    background-color: #181818;
+}
+
+
+
+.container-header-slider-item .carousel-inner .carousel-item .container-home-list {
+    background-color: #d7946d;
+}
+
+/*.container-movie-item*/
+.container-movie-item {
+    /* position: relative; */
+}
+
+.container-movie-item:hover {
+    background-color: #181818;
+}
+
+
+.container-movie-item .container-movie-item-link {
+    text-decoration: none;
+}
+
+.container-movie-item-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-movie-item-link .container-movie-name {
+    min-height: 55px;
+    padding-top: 5px;
+    background-color: #263238;
+    margin-bottom: 16px;
+}
+
+
+
+.container-movie-name {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.container-movie-item:hover .container-movie-item-link .fa-solid.fa-circle-play {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.container-movie-item-link .fa-solid.fa-circle-play {
+    font-size: 34px;
+    position: absolute;
+    top: calc(50% - 17px);
+    left: calc(50% - 17px);
+    color: #522e75;
+    /* color: rgba(0, 0, 0, 0.8); */
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+    /* background-color: rgba(0, 0, 0, 0.5) */
+}
+
+
+.container-movie-item-link .container-movie-img {
+    display: block;
+    /* margin: 0; */
+    transition: transform 0.4s ease;
+}
+
+.container-movie-item:hover .container-movie-img {
+    transform: scale(1.2);
+}
+
+.pagination {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #00695c;
+    padding: 0.5rem;
+    border: 1px solid #00695c;
+    margin: 0 1rem;
+}
+
+.pagination a:hover,
+.pagination a:active,
+.pagination a.active {
+    background: #00695c;
+    color: white;
+}
+
+.sidebar-movie-chaton {
+    margin-top: 32px;
+    width: 100%;
+    height: 400px;
+    background-color: #00695c;
+}
+
+.container-home-title{
+    margin: 12px 38px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc107;
+    border-radius: 2px;
+}
+
+.container-home-nametitle{
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+}
+
+/* END HOME PAGE */

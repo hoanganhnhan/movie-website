@@ -1,0 +1,66 @@
+<div class="container container-detail-body">
+    <div class="row">
+        <div class="col-md-6 container-detail-body-img">
+            <div class="container-detail-body-img-content">
+                <img class="container-detail-body-img-detail" src="/<%= movie.imageUrl %>" alt="fsadf">
+                <div class="poster-button">
+                    <% if(modeWatching===false){ %>
+                    <a class="btn-detail-body-watch" href="#">XEM PHIM</a>
+                    <% } else { %>
+                    <a class="btn-detail-body-watch" href="/watching/<%= movie.name %>?episode=1">XEM PHIM</a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 container-detail-body-detail">
+            <div class="container-detail-body-title">
+                <span class="detail-body-title-name">
+                    <div class="title-name-text">
+                        <%= movie.name %>
+                    </div>
+                    <button id="add-to-cart-icon" style="border-radius: 50%; background-color: #1a2023; border: none;">
+                        <i class="fa-solid fa-heart icon-cart-tym" id="add-to-cart-icon"></i>
+                    </button>
+                </span>
+                <span class="detail-body-title-year">Word of Honor (2022)</span>
+            </div>
+
+            <div class="container-scroll-bar">
+                <div class="container-detail-body-content">
+                    <% if(listEpisode.length===0){ %>
+                        <p>Trang Thai: Đang cập nhật...</p>
+                        <p>Sắp Chiếu: Đang cập nhật...</p>
+                    <% } else{ %>
+                        <p>Trang Thai: Tập <%= listEpisode[listEpisode.length-1].episode  %>  VIETSUB</p>
+                        <p>Sắp Chiếu: Tập <%= listEpisode[listEpisode.length-1].episode +1 %>  VIETSUB</p>
+                    <% } %>
+                    <p>Đạo diễn: <%= movie.director %>
+                    </p>
+                    <p>Thời lượng:  40 phút / tập</p>
+                    <p>Quốc Gia:  <%= movie.national %>
+                    </p>
+                    <p>Nhà sản xuất: <%= movie.producer %>
+                    </p>
+                    <p>Diễn Viên: <%= movie.character %>
+                    </p>
+                    <p>Thể loại: <%= movie.typeFilm %>
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-detail-body-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Form hidden post cart  -->
+<form name="form-add-to-cart" method="POST">
+    <input id="hiddent-objectId" type="hidden"  name="objectId" value="<%= movie._id %>">
+    <input id="hidden-csrf" type="hidden" name="_csrf" value="<%= csrfToken %>">
+</form>
+
+<script src="../../../../js/addtoCart.js"></script>

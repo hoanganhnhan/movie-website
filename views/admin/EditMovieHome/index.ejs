@@ -1,0 +1,37 @@
+<%- include('../../includes/header.ejs') %>
+<link rel="stylesheet" href="/css/admin/sidebar.css">
+<link rel="stylesheet" href="/css/admin/bodyadmin.css">
+<link rel="stylesheet" href="/css/admin/editmovie.css">
+<link rel="stylesheet" href="/css/toastmessage.css">
+<link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.css">
+
+</header>
+
+<body>
+
+<%- include('../../includes/navigation.ejs') %>
+<div class="container pt-60px">
+  <a href="/admin/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <p class="sidebar-title">DARK ADMIN</p>
+</a>
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 container-sidebar-admin-home">
+      <%- include('../SideBarAdmin/index.ejs') %>
+    </div>
+    <div class="col py-3">
+      <% if (!isEpisodeHome) { %>
+
+        <%- include('./BodyEditMovie/bodyeditmovie.ejs') %>
+
+      <% } else { %>
+
+        <%- include('./EpisodeHome/index.ejs') %>
+
+      <% } %>
+    </div>
+</div>
+</div>
+
+
+
+<%- include('../../includes/footer.ejs') %>

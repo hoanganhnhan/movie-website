@@ -1,0 +1,91 @@
+/* START HOME SIDEBAR */
+
+/*Phim sắp chiếu - contain home sidebar */
+
+.container-home-sidebar {
+    height: auto;
+    background-color: #1a2023;
+    margin-top: 16px;
+    /* margin-right: 8px;
+    min-width: 270px; */
+}
+
+.container-home-sidebar .caption {
+    color: #d7946d;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 2px dashed #5d5d5d;
+    font-size: 20px;
+    font-family: 'roboto';
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.caption span {
+    margin-left: 8px;
+}
+
+.sidebar-movie-new-list .sidebar-movie-new-item {
+    margin: 8px 0;
+}
+
+.sidebar-movie-new-list .sidebar-movie-new-item:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sidebar-movie-new-item .sidebar-item-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+}
+
+.sidebar-movie-new-item .sidebar-item-name {
+    font-weight: 600;
+}
+
+
+
+.sidebar-movie-new-list {
+    margin-top: 20px;
+    margin-left: 8px;
+
+}
+
+.sidebar-movie-new-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+
+}
+
+.sidebar-movie-new-name {}
+
+.sidebar-movie-new-item .sidebar-item-img {
+    width: 60px;
+    height: 80px;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 4px;
+    border: solid #e9ecef 2px;
+}
+
+.sidebar-movie-new-item .sidebar-item-content {
+    color: #fff;
+    font-size: 11px;
+    display: column;
+    flex: 3;
+}
+
+.sidebar-item-name {}
+
+.sidebar-item-episode {}
+
+
+
+/* END HOME SIDEBAR */
+
+
+/* #1a2023 */

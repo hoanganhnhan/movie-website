@@ -1,0 +1,81 @@
+<div class="body-container-admin">
+    <div class="body-admin-header">
+        <p class="body-admin-header-title"><%= pageTitle %></p>
+    </div>
+
+    <div class="body-edit-user">
+        <div class="body-edit-user-form">
+            <div class="toast-message-box">
+                <% if(errorMeassage) { %>
+                <div id="toast-message" class="toast-message">
+                    <div class="toast-message toast-message__error-admin">
+                      <div class="toast-message__icon">
+                        <i class="fas fa-exclamation-circle" style="font-size: 20px; color:#333 ;"></i>
+                    </div>
+                    <div class="toast-message__body">
+      
+                        <h3 class="toast-message__title">Error !!! </h3>
+
+                        <p class="toast-message__msg"><%= errorMeassage %></p>
+                    </div>
+                    <div class="toast-message__close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                  </div>
+                </div>
+                <% } %>
+
+              </div>
+
+            <div class="container">
+            <form action="/admin/<% if (editing) { %>edit-user<% } else { %>add-user<% } %>" method="POST" enctype="multipart/form-data">
+                <div class="edit-user-form ">
+                    <div class="form-group edit-user-item">
+                      <label for="email">Email</label>
+                      <input 
+                       class="<%= validationErrors.find(e => e.param === 'email') ? 'invalid' : '' %> form-control edit-user-item-input"
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        value="<%= oldInput.email %>"
+                        placeholder="Enter your email"
+                        >
+                    </div>
+        
+                    <div class="form-group edit-user-item">
+                        <label for="password">Password</label>
+                        <input 
+                         class="<%= validationErrors.find(e => e.param === 'password') ? 'invalid' : '' %> form-control edit-user-item-input"
+                          type="password" 
+                          name="password" 
+                          id="password"
+                          value="<%= oldInput.password %>"
+                          placeholder="Enter Your password" >
+                      </div>
+                    <% if(!editing) { %>
+                    <div class="form-group edit-user-item">
+                            <label for="confirmPassword">Retype Password</label>
+                            <input 
+                             class="<%= validationErrors.find(e => e.param === 'confirmPassword') ? 'invalid' : '' %> form-control edit-user-item-input"
+                              type="password" 
+                              name="confirmPassword" 
+                              id="confirmPassword"
+                              value="<%= oldInput.confirmPassword %>"
+                              placeholder="Enter Your Retype password" >
+                    </div>  
+                    <% } %>  
+
+                    <button type="submit" class="btn btn-primary btn-edit-user-submit"><% if (editing) { %>Update<% } else { %>Add User<% } %></button>
+                </div>
+    
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    
+                <% if (editing) { %>
+                    <input type="hidden" value="<%= userId %>" name="userId">
+                <% } %>
+                
+              </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,6 @@
+<form action="/auth/cart" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <button class="footer-item-detail" type="submit">Add to Cart</button>
+    <input type="hidden" name="movieId" value="<%= movie._id %>">
+
+</form>

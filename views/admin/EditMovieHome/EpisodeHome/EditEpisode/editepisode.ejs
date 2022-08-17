@@ -1,0 +1,97 @@
+<%- include('../../../../includes/header.ejs') %>
+<link rel="stylesheet" href="/css/admin/sidebar.css">
+<link rel="stylesheet" href="/css/admin/bodyadmin.css">
+<link rel="stylesheet" href="/css/admin/editmovie.css">
+<link rel="stylesheet" href="/css/toastmessage.css">
+
+</header>
+
+<body>
+
+<%- include('../../../../includes/navigation.ejs') %>
+<div class="container">
+  <a href="/admin/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <p class="sidebar-title">DARK ADMIN</p>
+</a>
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 container-sidebar-admin-home">
+      <%- include('../../../SideBarAdmin/index.ejs') %>
+        </div>
+
+        <div class="col py-3">
+            <div class="body-admin-header">
+                <p class="body-admin-header-title"><%= pageTitle %></p>
+            </div>
+            <div class="body-container-admin">
+                <div class="container-body-editmovie">
+                    
+                    <div class="toast-message-box">
+                        <% if(errorMeassage) { %>
+                        <div id="toast-message" class="toast-message">
+                            <div class="toast-message toast-message__error-admin">
+                              <div class="toast-message__icon">
+                                <i class="fas fa-exclamation-circle" style="font-size: 20px; color:#333 ;"></i>
+                            </div>
+                            <div class="toast-message__body">
+              
+                                <h3 class="toast-message__title">Error !!! </h3>
+      
+                                <p class="toast-message__msg"><%= errorMeassage %></p>
+                            </div>
+                            <div class="toast-message__close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <% } %>
+      
+                      </div>
+                    <form action="/admin/<%= movie._id %>/<% if (!editing) { %>add-episode<% } else { %>edit-episode<% } %>" method="POST" enctype="multipart/form-data">
+                        <div class="form-group-container">
+                            <% if(!addEpisodeMode) { %>
+                            <div class="form-group-container-item">
+                                <div class="form-group">
+                                <label for="name">Episode</label>
+                                <input 
+                                    class="form-control form-edit-movie-item-name"
+                                    type="number" 
+                                    name="episode" 
+                                    id="episode" 
+                                    value="<%= oldInput.episode %>">
+                                </div>
+                                <% } %>
+                                <div class="form-group">
+                                    <label for="movieurl">Movie URL</label>
+                                    <input 
+                                      class="form-control form-edit-movie-item-movieUrl"
+                                      type="text" 
+                                      name="movieurl" 
+                                      id="movieurl" 
+                                      value="<%= oldInput.movieUrl %>">
+                                  </div>
+                            </div>
+                            
+                            <div class="btn-form-group-submit">
+    
+                                <button type="submit" class="btn btn-primary btn-edit-movie">Submit</button>
+                            </div>
+                        </div>
+                        <% if (editing) { %>
+                            <input type="hidden" value="<%= episodeId %>" name="episodeId">
+                        <% } %>
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<%- include('../../../../includes/footer.ejs') %>
+
+

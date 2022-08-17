@@ -1,0 +1,34 @@
+<div class="container-detail-chatonline">
+    <div class="container-detail-comment">
+        <h1>COMMENT</h1>
+        <form id='form-comment' action="/user-chat/<%= movie._id %>" method="POST">
+            <input type='text' id="comment" name="comment">
+            <button class="btn-comment"> Send </button>
+            <input type="hidden" name="movieId" id="movieId" value="<%= movie._id %>">
+            <input type="hidden" name="emailUser" id="emailUser" value="<%= user.email %>">
+            <input id="hidden-csrf" type="hidden" name="_csrf" value="<%= csrfToken %>">
+        </form>
+        <ul id='list-comment' style="list-style-type: none; overflow-y: scroll; height: 350px;">
+            <% for (let comment of listcomment) { %>
+                <li style="font-size: 14px; padding: 8px 12px;">
+                    <i class="fa-solid fa-user" style="font-size: 20px; color: rgb(33, 129, 97);"></i>
+                    <span >User <%= comment.name %>: </span>
+                    <span><%= comment.content %></span>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</div>
+
+<!-- Form hidden delete Movie in Cart-->
+<form name="form-chatonline">
+    <input id="hidden-csrf" type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <input type="hidden" name="movieId" id="movieId" value="<%= movie._id %>">
+  </form>
+
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="../../js/socket.js"></script>
+
+</script>

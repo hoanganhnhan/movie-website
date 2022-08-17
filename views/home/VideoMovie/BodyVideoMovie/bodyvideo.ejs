@@ -1,0 +1,20 @@
+<div class="container-body-video">
+    <iframe class="container-body-video-ifarme" src="<%= movieEpisodeDetail[0].movieUrl %>">
+    </iframe>
+</div>
+<div class="container-body-episode ">
+    <div class="container-body-episode-list">
+        <% for (let episode of listEpisode) { %>
+        <div class="container-body-episode-item">
+            <a href="/watching/<%= movie.name %>?episode=<%= episode.episode %>">
+                <span>Tập <%= episode.episode %></span>
+            </a>
+        </div>
+
+        <% } %>
+    </div>
+</div>
+
+<div class="container-body-video-title">
+    <span><%= movie.name %></span>
+</div>

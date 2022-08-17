@@ -1,0 +1,50 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #160627;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgb(68, 84, 111));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(26, 14, 39), rgb(62, 73, 93))
+    }
+
+
+    .box input[type = "email"],
+    .box input[type = "password"],
+    .box input[type = "confirmpassword"]
+    {
+        border:0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+      }
+      .box input[type = "email"]:focus,
+      .box input[type = "password"]:focus,
+      .box input[type = "confirmpassword"]:focus
+      {
+        width: 280px;
+        border-color: #2ecc71;
+      }
+
+
+      .with-120{
+        width: 120px;
+      }
+      .form-label{
+        font-size: 12px;
+      }
+
+      .font-size-12{
+        font-size: 12px;
+        text-decoration: double;
+        border-bottom: 1px solid olive;
+      }

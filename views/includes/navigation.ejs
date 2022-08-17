@@ -1,0 +1,227 @@
+<link rel="stylesheet" href="/css/navigation.css">
+<div class="container-navigarion-flush">
+
+    <div class="container">
+        <div class="row">
+            <div class="container-header-navigation">
+
+                <div class="main-header__logo">
+                    <a href="/">
+                        <img src="/images/logo.jpg" class='main-header__logo-img' alt="">
+
+                    </a>
+                </div>
+
+                <div class="main-header__nav">
+                    <div class="main-header__nav-list">
+                        <div class="main-header__nav-item">
+                            <a href="/" class="main-header__nav-link">XEM PHIM</a>
+                        </div>
+                        <div class="main-header__nav-item main-header__nav-item-title">
+                            <a href="/" class="main-header__nav-link">THỂ LOẠI</a>
+                            <i class="fa-solid fa-angle-down" style="color: #ffc107;"></i>
+                            <div class="header_notify_theloai">
+                                <div class="header_notify_theloai-list">
+                                    <a href="/category/Cổ Trang-Thần Thoại" class="header_notify_theloai-item">
+                                        Cổ Trang-Thần Thoại
+                                    </a>
+                                    <a href="/category/Khoa Học-Viễn Tưởng" class="header_notify_theloai-item">
+                                        Khoa Học-Viễn Tưởng
+                                    </a>
+                                    <a href="/category/Thể Thao-Âm Nhạc" class="header_notify_theloai-item">
+                                        Thể Thao-Âm Nhạc
+                                    </a>
+                                    <a href="/category/Bí Ẩn-Siêu Nhân" class="header_notify_theloai-item">
+                                        Bí Ẩn-Siêu Nhân
+                                    </a>
+                                    <a href="/category/Võ Thuật-Kiếm Kiệp" class="header_notify_theloai-item">
+                                        Võ Thuật-Kiếm Kiệp
+                                    </a>
+                                    <a href="/category/Hình Sự-Chiến Tranh" class="header_notify_theloai-item">
+                                        Hình Sự-Chiến Tranh
+                                    </a>
+                                    <a href="/category/Thuyết Minh" class="header_notify_theloai-item">
+                                        Thuyết Minh
+                                    </a>
+                                    <a href="/category/Phiêu Lưu-Hành Động" class="header_notify_theloai-item">
+                                        Phiêu Lưu-Hành Động
+                                    </a>
+                                    <a href="/category/" class="header_notify_theloai-item">
+                                        Tài Liệu-Hành Động
+                                    </a>
+                                    <a href="/category/Gia Đình- Học Đường" class="header_notify_theloai-item">
+                                        Gia Đình- Học Đường
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-header__nav-item main-header__nav-item-title">
+                            <a href="" class="main-header__nav-link">QUỐC GIA</a>
+                            <i class="fa-solid fa-angle-down" style="color: #ffc107;"></i>
+
+                            <div class="header_notify_theloai">
+                                <div class="header_notify_theloai-list">
+                                    <a href="/category/Việt-Nam" class="header_notify_theloai-item">
+                                        Việt Nam
+                                    </a>
+                                    <a href="/category/Trung-Quốc" class="header_notify_theloai-item">
+                                        Trung Quốc
+                                    </a>
+                                    <a href="/category/Âu-Mỹ" class="header_notify_theloai-item">
+                                        Âu-Mỹ
+                                    </a>
+                                    <a href="/category/" class="header_notify_theloai-item">
+                                        Đài Loan
+                                    </a>
+                                    <a href="/category/Hàn-Quốc" class="header_notify_theloai-item">
+                                        Hàn Quốc
+                                    </a>
+                                    <a href="/category/Nhật-Bản" class="header_notify_theloai-item">
+                                        Nhật Bản
+                                    </a>
+                                    <a href="/category/Thái-Lan" class="header_notify_theloai-item">
+                                        Thái Lan
+                                    </a>
+                                    <a href="/category/Ấn-Độ" class="header_notify_theloai-item">
+                                        Ấn Độ
+                                    </a>
+                                    <a href="/category/Hồng-Kong" class="header_notify_theloai-item">
+                                        Hồng Kong
+                                    </a>
+                                    <a href="/category/Canada" class="header_notify_theloai-item">
+                                        Canada
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-header__nav-item">
+                            <a href="/category/Phim-Mới" class="main-header__nav-link">PHIM MỚI</a>
+                        </div>
+                        <div class="main-header__nav-item">
+                            <a href="/category/Phim-Bộ" class="main-header__nav-link">PHIM BỘ</a>
+                        </div>
+                        <div class="main-header__nav-item">
+                            <a href="/category/Phim-Lẻ" class="main-header__nav-link">PHIM LẺ</a>
+                        </div>
+                        <div class="main-header__nav-item">
+                            <a href="/category/TV-Show" class="main-header__nav-link">TV SHOW</a>
+                        </div>
+                        <div class="main-header__nav-item">
+                            <a href="/category/Phim-Chiếu-Rạp" class="main-header__nav-link">PHIM CHIẾU RẠP</a>
+                        </div>
+                        <% if (isAuthenticated && roleUser==='admin' ) { %>
+                            <div class="main-header__nav-item">
+                                <a href="/admin" class="main-header__nav-link">Admin</a>
+                            </div>
+                            <% } %>
+                    </div>
+                </div>
+
+                <div class="nav__search">
+                    <form name="form-search-movie" method="POST" action="/search">
+                        <input class="form-control"
+                            style="width: 240px; height:35px; font-size: 12px; background-color: #0f1416; color: whitesmoke;"
+                            type="search" placeholder="Tìm kiếm, TV show hoặc người nổi tiếng" name="Search"
+                            id="keywordSearch">
+                        <input id="hidden-csrf" type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    </form>
+                </div>
+
+
+                <div class="main-header__auth">
+                    <% if (!isAuthenticated) { %>
+                        <li class="main-header__auth-item">
+                            <a href="/auth/login" class="main-header__login-link">
+
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                            </a>
+                        </li>
+                        <% } else { %>
+                            <div class="main-header__auth-item main-header__auth-login">
+                                <a href="#" class="main-header__login-link-x ">
+                                    <!-- <i class="fa-solid fa-user" style="font-size: 18px; color: #91b5d3;"></i> -->
+                                    <i class="fa-solid fa-house-user" style="font-size: 24px; color: #b71c1c;"></i>
+                                </a>
+                                <!-- header notify auth  -->
+                                <div class="main-header__auth-login-notify">
+                                    <ul class="main-header__auth-login-list">
+                                        <a href="/auth/my-account">
+                                            <li class="main-header__auth-login-item">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span>Thông tin tài khoản</span>
+                                            </li>
+                                        </a>
+                                        <a href="/auth/cart">
+                                            <li class="main-header__auth-login-item">
+                                                <i class="fa-solid fa-film"></i>
+                                                <span>Hộp phim</span>
+                                            </li>
+                                        </a>
+                                        <a href="/auth/change-myaccount">
+                                            <li class="main-header__auth-login-item">
+                                                <i class="fa-solid fa-lock"></i>
+                                                <span>Thay đổi tài khoản</span>
+                                            </li>
+                                        </a>
+                                        <a href="/auth/logout">
+                                            <li class="main-header__auth-login-item">
+                                                <i class="fa-solid fa-right-from-bracket"></i>
+                                                <span>Đăng xuất</span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <% } %>
+                </div>
+                <!-- tablet & mobile -->
+
+
+                <label for="nav-mobile-input" class="nav__bar-btns">
+                    <div class="icon-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </label>
+
+                <input type="checkbox" name="" class="nav__input" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav__overlay">
+
+                </label>
+                <nav class="nav__mobile" >
+                    <label for="nav-mobile-input" class="nav__mobile-close">
+
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+
+                    <ul class="nav__mobile-list">
+                        <li>
+                            <a href="/" class="nav__mobile-link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="/" class="nav__mobile-link">QUỐC GIA</a>
+                        </li>
+                        <li>
+                            <a href="/category/Phim-Mới" class="nav__mobile-link">PHIM MỚI</a>
+                        </li>
+                        <li>
+                            <a href="/category/Phim-Bộ" class="nav__mobile-link">PHIM BỘ</a>
+                        </li>
+                        <li>
+                            <a href="/category/Phim-Lẻ" class="nav__mobile-link">PHIM LẺ</a>
+                        </li>
+                        <li>
+                            <a href="/category/TV-Show" class="nav__mobile-link">TV SHOW</a>
+                        </li>
+                        <li>
+                            <a href="/category/Phim-Chiếu-Rạp" class="nav__mobile-link">PHIM CHIẾU RẠP</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

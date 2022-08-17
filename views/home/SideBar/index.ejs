@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="" href="/css/sidebar.css">
+<div class="container-home-sidebar">
+  <div class="caption">
+    <span>PHIM SẮP CHIẾU</span>
+  </div>
+
+  <div class="sidebar-movie-new-list">
+    <% for (let movies of listPhimSapChieu) { %>
+      <%- include('./ItemSideBar/itemsidebar.ejs',{movies: movies}) %>
+        <% } %>
+  </div>
+
+</div>
